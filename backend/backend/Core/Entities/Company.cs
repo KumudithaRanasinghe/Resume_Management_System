@@ -4,7 +4,7 @@ namespace backend.Core.Entities
 {
     public class Company : BaseEntity
     {
-        public String Name { get; set; }
+        public string Name { get; set; }
         public CompanySize Size { get; set; }
 
         //Relations
