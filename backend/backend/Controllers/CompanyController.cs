@@ -38,7 +38,7 @@ namespace backend.Controllers
         //Read
         [HttpGet]
         [Route("get")]
-        public async Task<ActionResult<IEnumerable<CompanyGetDto>>> GetCompanis()
+        public async Task<ActionResult<IEnumerable<CompanyGetDto>>> GetCompanies()
         {
             var companies = await _context.Companies.ToListAsync();
             var convertedCompanies = _mapper.Map< IEnumerable<CompanyGetDto>>(companies);
